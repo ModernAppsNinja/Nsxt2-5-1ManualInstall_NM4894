@@ -1,16 +1,14 @@
-# NSX-T 2.5 Manual Installation
-
-For NSXT 2.4 Manual Installation, please see the Pks1.4 Branch
+# NSX-T 2.5.1 Manual Installation
 
 ## Overview
 
-The following installation guide documents the implementation of a functional NSX-T 2.5 Installation. This implementation uses variables that function in the PKS-Ninja Topology 1 (T1) lab environment, using the PKS-Ninja-T1-Baseline template. Anyone is welcome to build a similar lab environment and follow along with the lab exercises, but please note you will need to replace any variables such as IP addresses and FQDNs and replace them with the appropriate values for your lab environment.
+The following installation guide documents the implementation of a functional NSX-T 2.5.1 Installation. This implementation uses variables that function in the TKGI-Ninja lab environment, using the TKGI-Ninja-Baseline template. Anyone is welcome to build a similar lab environment and follow along with the lab exercises, but please note you will need to replace any variables such as IP addresses and FQDNs and replace them with the appropriate values for your lab environment.
 
 The steps provided in this lab guide are intended for a lab implementation and do not necessarily align with best practices for production implementiations. While the instructions provided in this lab guide did work for the author in their lab environment, VMware and/or any contributors to this Guide provide no assurance, warranty or support for any content provided in this guide.
 
 ## Prerequisites
 
-- Please see [Getting Access to a PKS Ninja Lab Environment](https://github.com/CNA-Tech/PKS-Ninja/tree/Pks1.6/Courses/GetLabAccess-LA8528) to learn about how to access or build a compatible lab environment
+- VMware Employees can access a pre-built lab environment aligned with this guide by searching for quick demo on workspace one and selecting the TGKI-Ninja-Baseline Template
 
 ## Installation Notes
 
@@ -18,16 +16,16 @@ Anyone who implements any software used in this lab must provide their own licen
 
 For those needing access to VMware licensing for lab and educational purposes, we recommend contacting your VMware account team. Also, the [VMware User Group's VMUG Advantage Program](https://www.vmug.com/Join/VMUG-Advantage-Membership) provides a low-cost method of gaining access to VMware licenses for evaluation purposes.
 
-This lab follows the standard documentation, which includes additional details and explanations: [NSX-T 2.4 Installation Guide](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/2.5/installation/GUID-3E0C4CEC-D593-4395-84C4-150CD6285963.html)
+This lab follows the standard documentation, which includes additional details and explanations: [NSX-T 2.5 Installation Guide](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/2.5/installation/GUID-3E0C4CEC-D593-4395-84C4-150CD6285963.html)
 
 ### Overview of Tasks Covered in Lab 1
 
-- [NSX-T 2.5 Manual Installation](#nsx-t-25-manual-installation)
+- [NSX-T 2.5.1 Manual Installation](#nsx-t-251-manual-installation)
   - [Overview](#overview)
   - [Prerequisites](#prerequisites)
   - [Installation Notes](#installation-notes)
     - [Overview of Tasks Covered in Lab 1](#overview-of-tasks-covered-in-lab-1)
-  - [Step 1: Deploy NSXT Manager using OVF Install Wizard](#step-1-deploy-nsxt-manager-using-ovf-install-wizard)
+  - [Step 1:  Deploy NSXT Manager using OVF Install Wizard](#step-1-deploy-nsxt-manager-using-ovf-install-wizard)
   - [Step 2: Add NSX Compute Manager](#step-2-add-nsx-compute-manager)
   - [Step 3: Add an Edge Node, Transport Zones and Uplink Profiles with the NSX-T Guided Preparation Workflow](#step-3-add-an-edge-node-transport-zones-and-uplink-profiles-with-the-nsx-t-guided-preparation-workflow)
   - [Step 4: Prepare and Configure ESXi Hosts as NSX-T Transport Nodes](#step-4-prepare-and-configure-esxi-hosts-as-nsx-t-transport-nodes)
@@ -36,7 +34,7 @@ This lab follows the standard documentation, which includes additional details a
 
 ## Step 1:  Deploy NSXT Manager using OVF Install Wizard
 
-Note: Prior to Step 1, you will need to download the NSX-T 2.5 Installation Files and binaries. The Installation binaries are not included in the lab, users will need to provide their own access and licensing to download and use NSX-T 2.5. 
+Note: Prior to Step 1, you will need to download the NSX-T 2.5.1 Installation Files and binaries. The Installation binaries are not included in the lab, users will need to provide their own access and licensing to download and use NSX-T 2.5.1. 
 
 1.0 In the Main Console, the vSphere web client is already set up in Chrome. Open up Chrome to get to the vSphere login screen. You can log in using the credentials you were given for the lab,  and you may login by clicking the **Use Windows session authentication** checkbox.
 
@@ -71,7 +69,7 @@ Note: Prior to Step 1, you will need to download the NSX-T 2.5 Installation File
 1.5 On the `Review Details` step, verify details and click `Next`
 
 <details><summary>Screenshot 1.5</summary>
-<img src="media/2019-11-15-02-47-14.png">
+
 </details>
 <br/>
 
