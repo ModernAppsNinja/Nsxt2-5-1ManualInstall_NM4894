@@ -136,7 +136,7 @@ NOTE: If the option to power on the nsxmgr-01a VM is not available, log out and 
 
 #### 1.13 From the control center desktop, click the windows start button, in the search field type `DNS` and click on `DNS` as shown in the screenshot below
 
-<details><summary>Screenshot 1.13/summary>
+<details><summary>Screenshot 1.13</summary>
 <img src="media/2019-11-17-07-19-45.png">
 </details>
 
